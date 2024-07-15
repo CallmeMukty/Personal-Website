@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #202020;;
+    color: #fff;
+}
+
+p.brand-logo{
+    font-size: 2.5rem;
+    margin-top: auto;
+}
+/* Navbar */
+nav{
+    position: fixed;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    padding: 22px 15px;
+}
+
+/* .navbar.fixed{
+padding: 12px 15%;
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+.nav-links{
+    width: 60%;
+    padding-top: 15px;
+}
+
+.nav-links>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 20px;
+
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover{
+    color: #4070fd;
+}
+
+/* Hero Section */
+
+.hero-section{
+    position: relative;
+    top: 100px;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 55px 55px 100px;
+    display: flex;
+}
+
+.one{
+    background-color: #4070fd;
+    padding: 0 10px;
+}
+
+.one, .two{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+span{
+    color: #4070fd;
+}
+
+.hero-text{
+    padding:100px ;
+}
+
+.hero-text>h1{
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.hero-text>p{
+    font-size: 1.5rem;
+    
+}
+
+.hello-button{
+    width: 100%;
+}
+
+.hello-button button{
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4070fd;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hero-image{
+box-shadow: 0 0 8px #000;
+height: fit-content;
+margin-left: 150px;
+border: 8px solid #202020;
+}
+
+.hero-image img{
+    max-width: 350px;
+    border: 8px solid #202020;
+}
+
+/* About Section */
+.about-section{
+background-color: #2a2a2a;
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+gap: 1.5rem;
+padding: 25px 50px;
+}
+
+.about-image img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text>h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.about-text>h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.about-text>p {
+    font-size: 1.5rem;
+
+}
+
+/* Resume Section */
+
+.resume{
+    height: 100vh;
+}
+
+.resume>h2{
+    text-align: center;
+    font-size: 2.5rem;
+    /* padding-bottom: 50px; */
+}
+
+.resume-details{
+    margin-left: 50px;
+    padding: 50px 0;
+}
+
+.resume-details h3{
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.resume-details li{
+    list-style-type:circle;
+}
+
+/* Projects */
+.projects{
+    background-color: #2a2a2a;
+    padding:0 50px 50px  ;
+}
+
+.projects h2, .projects p{
+    text-align: center;
+}
+.projects h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.projects p{
+    font-size: 1.2rem;
+}
+
+.project-images{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    
+}
+
+.project-image img{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-texts{
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+.contact-texts h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-texts li{
+    list-style: none;
+}
+
+.contact-texts li>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    background: #4070fd;
+    color: #fff;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    margin-top: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+    background: #fff;
+    color: #4070fd;
+}
+
+.contact-form form{
+    position: relative;
+    margin-right: 20px;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: #2a2a2a;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;   margin-bottom: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+    
+.contact-form button {
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #4070fd;
+    color: #fff;
+    width: 160px;
+    transition: all .45s ease;
+    padding: 10px;
+    
+    }
+    
+.contact-form button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    background-color: #2a2a2a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1.2rem;
+}
+
+/* Media Query */
+@media (max-width:992px){
+header {
+    background-image: url(/images/mukty-2.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+    }
+
+.hero-section{
+    height: 100%;
+}    
+.hero-image,.hero-image img{
+    display: none;
+}
+    
+.one,
+.two {
+    font-size: 3.5rem;
+}
+
+span {
+    color: #4070fd;
+}
+
+.hero-text>h1 {
+    font-size: 10rem;
+}
+
+.hero-text>p {
+    font-size: 2.5rem;
+
+}
+/* Resume section */
+
+.resume{
+    height: 100%;
+}
+
+}
+
+/* Resume section */
+
+.resume{
+    height: 100%;
+}
+
+
+@media (max-width:768px){
+body{
+    width: 180%;
+}
+}
+@media (max-width:400px){
+body{
+    width: 220%;
+}
+}
